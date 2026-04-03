@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "TM Lead Pro Scraper",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://tsdr.uspto.gov/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

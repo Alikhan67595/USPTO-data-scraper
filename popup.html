@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 270px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .stats {
+      text-align: center;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .stats span {
+      font-weight: bold;
+      color: #27ae60;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      margin: 6px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .btn-save {
+      background: #27ae60;
+      color: white;
+    }
+
+    .btn-save:hover {
+      background: #219150;
+    }
+
+    .btn-download {
+      background: #2980b9;
+      color: white;
+    }
+
+    .btn-download:hover {
+      background: #216694;
+    }
+
+    /* 🔴 Small danger button */
+    .btn-clear {
+      background: transparent;
+      color: #e74c3c;
+      font-size: 12px;
+      padding: 5px;
+      width: auto;
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    .btn-clear:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="title">TM Lead Scraper</div>
+
+    <div class="stats">
+      Total Leads: <span id="count">0</span>
+    </div>
+
+    <button id="startScan" class="btn-save">Scan & Save</button>
+    <button id="downloadXlsx" class="btn-download">Download Excel</button>
+
+    <!-- Small clear button -->
+    <button id="clearData" class="btn-clear">Clear Data</button>
+  </div>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="popup.js"></script>
+
+</body>
+</html>
