@@ -1,0 +1,44 @@
+#tm-scraper-widget {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 230px;
+    background: #ffffff;
+    border-radius: 12px;
+    z-index: 999999;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
+    padding: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.scraper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.scraper-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.scan-btn { background: #27ae60; color: white; }
+.download-btn { background: #2980b9; color: white; }
+
+.scraper-log {
+    font-size: 11px;
+    margin-top: 6px;
+    color: #555;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 16px;
+}

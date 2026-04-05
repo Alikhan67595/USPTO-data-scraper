@@ -1,10 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "TM Lead Pro Scraper",
-  "version": "1.0",
+  "name": "TM Lead Pro Floating",
+  "version": "2.0",
   "permissions": ["storage", "activeTab", "scripting"],
-  "host_permissions": ["https://tsdr.uspto.gov/*"],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  "host_permissions": ["*://tsdr.uspto.gov/*","*://docs.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://tsdr.uspto.gov/*","*://docs.google.com/*"],
+      "js": ["xlsx.full.min.js", "content.js"],
+      "css": ["floating.css"]
+    }
+  ]
 }
